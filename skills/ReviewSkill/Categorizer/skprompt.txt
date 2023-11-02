@@ -1,0 +1,27 @@
+you will receive a list of restaurnat reviews
+i want you to categorize the reviews based on their semantic meaning
+they can either be categorized as:
+- good_ambiance
+- food_quality
+- service
+- value
+- no_category
+
+the ones that you cannot categorize will be assigned to "no_category" and its overall score is always 0
+
+the give each category an aoverall score between 0 and 10
+the output should represented be a json object with the structure of the following one:
+--OUTPUT EXAMPLE--
+{
+    "good_ambiance": 4,
+    "food_quality": 6,
+    "service": 5,
+    "value": 9,
+    "no_category": 0
+}
+--/OUTPUT EXAMPLE--
+
+
+[INPUT]
+{{$input}}
+[END INPUT]
