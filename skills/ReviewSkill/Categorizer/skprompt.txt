@@ -4,20 +4,39 @@ they can either be categorized as:
 - good_ambiance
 - food_quality
 - service
-- value
+- value_for_price
 - no_category
 
 the ones that you cannot categorize will be assigned to "no_category" and its overall score is always 0
-
-the give each category an aoverall score between 0 and 10
+extract a unique list of dishes from the reviews and add them to the "dishes" list of the output
+assign each category with an aoverall score between 0 and 10
 the output should represented be a json object with the structure of the following one:
 --OUTPUT EXAMPLE--
 {
-    "good_ambiance": 4,
-    "food_quality": 6,
-    "service": 5,
-    "value": 9,
-    "no_category": 0
+    "good_ambiance": {
+        "score": 4,
+        "reviews": ["SUMMUARY OF THE REVIEW 1","SUMMUARY OF THE REVIEW 2"]
+    },
+    "food_quality": {
+        "score": 6,
+        "reviews": ["SUMMUARY OF THE REVIEW 1","SUMMUARY OF THE REVIEW 2"]
+    },
+    "service": {
+        "score": 5,
+        "reviews": ["SUMMUARY OF THE REVIEW 1","SUMMUARY OF THE REVIEW 2"]
+    },
+    "value_for_price": {
+        "score": 9,
+        "reviews": ["SUMMUARY OF THE REVIEW 1","SUMMUARY OF THE REVIEW 2"]
+    },
+    "no_category": 0,
+    "dishes": [
+        "Pizza Margherita",
+        "Mozzarella",
+        "Spaghetti allo Scoglio",
+        "Meat",
+        "Pasta"
+    ]
 }
 --/OUTPUT EXAMPLE--
 

@@ -1,0 +1,20 @@
+GENERATE A LIST OF MINIMUM FIVE TO A MAX OF 20 CUSTOMER REVIEW OF A RESTAURANT
+GUESS THE RESTAURANT TYPE IF NOT PROVIDED
+EACH REVIEW MUST CONTAIN ONE OR MORE OF THESE TOPCS:
+- good_ambiance
+- food_quality
+- service
+- value_for_price
+
+THE OUTPUT MUST BE JSON ARRAY OF REVIEWS
+THIS IS AN EXAMPLE FO THE JSON SCHEMA OF A REVIEW:
+[REVIEW SCHEMA] 
+  {
+    "user_name": "Marianna Viola",
+    "score": 4.5,
+    "review": "It was a wonderful experience. Very nice manager and the service was excellent As was the food (very fresh and very well prepared) and we especially love the red wine! We will definitly go back. Nice escape from the \"brouhaha\" of the city."
+  }
+[END REVIEW SCHEMA]
+[INPUT]
+RESTAURANT TYPE {{$input}}
+[END INPUT]
