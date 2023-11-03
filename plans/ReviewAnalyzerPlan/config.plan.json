@@ -1,0 +1,16 @@
+{
+    "name": "ReviewAnalyzerPlan",
+    "input": "",
+    "skills": [
+        {
+            "name": "ReviewSkill",
+            "folder": "skills",
+            "isSemantic": true,
+            "functions": [
+                {
+                    "label": "Categorizer"
+                }
+            ]
+        }
+    ]
+}

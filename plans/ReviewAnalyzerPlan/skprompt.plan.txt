@@ -1,0 +1,1 @@
+Given the vast number of restaurants and the various reviews they receive, create a system that categorizes reviews based on their semantic meaning (e.g., ambiance, food quality, service, value for money).
