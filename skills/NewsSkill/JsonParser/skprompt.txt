@@ -1,0 +1,14 @@
+The input will be a string representation of a JSON object and a property the value should be extracted, parse it, and extract the value of the requested property.
+The output should be only the value of the property
+
+[EXAMPLE INPUT]
+{"id":1, "title":"My title"}, title
+[END EXAMPLE INPUT]
+
+[EXAMPLE OUTPUT]
+My title
+[END EXAMPLE OUTPUT]
+
+[INPUT]
+{{$input}}
+[END INPUT]

@@ -1,0 +1,27 @@
+Search the internet for the best manufacturers and models of the item provided in the INPUT
+The output should be a list of model / brand names of the items and the reasons why they are the best on the market
+The list must contains at most 5 items
+If a LANGUAGE is provided, translate the reasoning text in that language, if not, default to ENGLISH
+
+[EXAMPLE INPUT]
+mobiel phone
+[END EXAMPLE INPUT]
+
+[EXAMPLE OUTPUT]
+[{
+	"name":"iPhone 15",
+	"brand":"Apple",
+	"reasoning":"Even if expensive, the Apple iPhone is the best mobile phone on the market for the design, the material, the proprietary operative system and the efficiency of the customer support."
+},
+{
+	"name":"Pixel 8 Pro",
+	"brand":"Google",
+	"reasoning":"
+I still love the phone's design, and the screen still looks great. The cameras also remain top-tier. In fact, I like shooting with the Pixel 8 Pro so much that I upgraded my Google Photos subscription so I could move my photo library to it from Apple Photos."
+}
+]
+[END EXAMPLE OUTPUT]
+
+[INPUT]
+{{$input}}
+[END INPUT]

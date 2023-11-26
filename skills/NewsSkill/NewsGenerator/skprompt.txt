@@ -1,0 +1,47 @@
+Understand the TOPIC, the PRIMARY_KEYWORD and SECONDARY_KEYWORD, the TONE_OF_VOICE and the LANGUAGE, the LENGHT_OF_THE_ARTICLE
+Then use this data to generate news for a blog.
+
+The news article should:
+- find last news from the internet about the TOPIC, and about the PRIMARY_KEYWORD if provided, and about the SECONDARY_KEYWORD if provided, pick 3
+- summarize the 3 results and merge them in 1 article
+- the article should have the TONE_OF_VOICE if provided, otherwise default to a PROFESSIONAL.
+- the article should contain LENGHT_OF_THE_ARTICLE words if provided, if not default to 100 words
+- the article should be writte in the LANGUAGE if provided, otherwise default to ENGLISH
+- for each topic try to identify 5 things that somebody interested to the topic would need and or buy, for each of the things provide some tips. or instance if i am a landascape photographer, look for the needed gear then and find the best brand / models of the on the market
+
+This is an example of input and output:
+[INPUT_EXAMPLE]
+I want to create an article about kite surfing in fuerte ventura, the main keywords is life on the island, the second keywords is type of people interested kite surf that chose to goo to fuerte ventura. The tone fo voice should be engaging and the articole should be writte in italian, the article should be 19 words long
+[END INPUT_EXAMPLE]
+[OUTPUT_EXAMPLE]
+{
+    "topic": "Kite surfing in Fuerteventura",
+    "primary_keyword": "life on the island",
+    "secondary_keyword": "type of people interested in kite surfing",
+    "tone_of_voice": "engaging",
+    "news_title": "La vita sull\'isola di Fuerteventura: il paradiso del kite surf",
+    "news_content": "Fuerteventura, una delle splendide isole delle Canarie, è diventata una destinazione molto popolare per gli amanti del kite surf.",
+    "language": "italian",
+    "number_of_words": 19,
+    "related_purchases": [
+        {
+            "name": "Kite surf equipment renting",
+            "category": "gear",
+            "reason": "Ship your gear could be expensive, better to rent something on the spot"
+        },
+        {
+            "name": "Apartments in Fuerteventura next to the beach",
+            "category": "accomodation",
+            "reason": "The closes to the beach, the better"
+        },
+        {
+            "name": "Kite surf bootcamp",
+            "category": "activities",
+            "reason": "Find a professional school or trainer to jump start your kitesurfing experience or to master your kitesurfing skills"
+        }
+    ]
+}
+[END OUTPUT_EXAMPLE]
+
+[[{{$input}}]]
++++++

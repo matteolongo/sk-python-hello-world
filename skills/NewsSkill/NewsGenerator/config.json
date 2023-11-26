@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "type": "completion",
+  "description": "Given a topic, a primary keyword, an optional secondary keyword, the tone of voice, and the language, generates a JSON with the following properties: topic, primary_keyword, secondary_keyword, tone_of_voice, news_title, news_content, language, number_of_words, related_purchases which is an array of items with these properties: name, category, reason",
+  "completion": {
+    "max_tokens": 2000,
+    "temperature": 0.6,
+    "top_p": 0.0,
+    "presence_penalty": 0.0,
+    "frequency_penalty": 0.0
+  }
+}
